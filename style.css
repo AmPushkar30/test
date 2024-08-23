@@ -1,0 +1,28 @@
+img {
+  margin-left: 40%;
+  margin-top: 1%;
+  height: 300px;
+  width: 300px;
+}
+
+.header {
+  text-align: center;
+  margin-top: 110px;
+}
+
+#preloader {
+  background: #ffffff url(loader.gif) no-repeat center center;
+  background-size: 500px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.letter-content {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
