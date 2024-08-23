@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!----------------------------------PRELOADER--------------------------------------------------->
+    <div id="preloader"></div>
+
+    <!---------------------------------MAIN-LETTER------------------------------------------------------>
+    <div class="title">
+      <h1>Hello....</h1>
+    </div>
+    <div class="letter-content">
+      <p>Letter content..............</p>
+      <p>Letter content..............</p>
+      <p>Letter content..............</p>
+    </div>
+
+    <!---------------------------------JAVASCRIPT---------------------------------------->
+    <script>
+      var loader = document.getElementById("preloader");
+      window.addEventListener("load", function () {
+        loader.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
