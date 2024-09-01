@@ -7,17 +7,45 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!----------------------------------PRELOADER--------------------------------------------------->
+    <!----------------------------------PRELOADER------------------------------------->
     <div id="preloader"></div>
 
-    <!---------------------------------MAIN-LETTER------------------------------------------------------>
+    <!---------------------------------TITLE------------------------------------------>
     <div class="title">
-      <h1>Hello....</h1>
+      <h1>Hello...</h1>
     </div>
-    <div class="letter-content">
-      <p>Letter content..............</p>
-      <p>Letter content..............</p>
-      <p>Letter content..............</p>
+    <!---------------------------------MAIN-LETTER------------------------------------>
+    <div class="lborder">
+      <div class="letter-content">
+        <p>
+          Mala nahi mahit tu he purna vachshil ki nahi but jar vachat asshil
+          tr<br />
+          please ragavu nako ani aplya friendship wr ajibt yacha effect padun
+          deu<br />
+          nako. Mi jewha tula first time bhetlo hoto tevha watla navta ki
+          mala<br />
+          ashya kahi feelings yetil tuza sathi, pn nantr apan bolayla, halu
+          halu<br />
+          gppa goshti vhayla laglya ani tyat ach kasa ky mahit tuzi saway
+          lagli<br />
+          ani tu halu halu aawadayla laglis. I know he thoda bachkana ahe but<br />
+          khara, he kadhi pasun maza manat hota. Tula kasa sangu he kala
+          navhta<br />
+          mhanun he letter letter banvun tula pathavtoy.<br />
+        </p>
+      </div>
+    </div>
+    <!---------------------------------NEXT PAGE BUTTON--------------------------------->
+    <div id="que">
+      <h2>Ky vichar ahe tuza ?</h2>
+    </div>
+    <div id="decision-container">
+      <div class="decision-left">
+        <button onclick="enterPage1()">Ho</button>
+      </div>
+      <div class="decision-right">
+        <button onclick="enterPage2()">Nahi</button>
+      </div>
     </div>
 
     <!---------------------------------JAVASCRIPT---------------------------------------->
@@ -26,6 +54,14 @@
       window.addEventListener("load", function () {
         loader.style.display = "none";
       });
+
+      function enterPage1() {
+        onclick = location.href = "yes.html";
+      }
+
+      function enterPage2() {
+        onclick = location.href = "no.html";
+      }
     </script>
   </body>
 </html>
