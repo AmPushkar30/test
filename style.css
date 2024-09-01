@@ -1,3 +1,11 @@
+body {
+  background: linen;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 img {
   margin-left: 40%;
   margin-top: 1%;
@@ -19,10 +27,131 @@ img {
   z-index: 100;
 }
 
+/*-----------------------LETTER-----------------------------------*/
 .letter-content {
   text-align: center;
+  color: azure;
+}
+
+.lborder {
+  border-bottom: 600px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 530px;
+  margin-right: 530px;
+  border: solid black;
+  background: url(letter-background.jpg);
 }
 
 .title {
   text-align: center;
+}
+
+#que {
+  text-align: center;
+}
+
+#decision-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.decision-left {
+  margin-right: 10px;
+}
+
+.decision-right {
+  margin-left: 10px;
+}
+
+.decision-left button,
+.decision-right button {
+  width: 100px; /* Adjusted for better visibility */
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: yellow;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(
+    270deg,
+    rgb(105, 105, 242),
+    rgb(255, 69, 196),
+    rgb(63, 255, 255),
+    white
+  );
+  background-size: 400% 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 3px solid white;
+  background-clip: padding-box;
+  animation: color-wave 4s infinite linear; /* Updated animation duration */
+}
+
+.decision-left button::before,
+.decision-right button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, blue, rgb(255, 78, 193), yellow);
+  z-index: -1;
+  filter: blur(8px);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  animation: glow 5s infinite;
+}
+
+.decision-left button:hover::before,
+.decision-right button:hover::before {
+  background: linear-gradient(45deg, cyan, white, pink);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 105, 180, 0.8);
+  filter: blur(10px);
+}
+
+@keyframes color-wave {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    filter: blur(8px);
+  }
+  50% {
+    filter: blur(12px);
+  }
+}
+
+@media (max-width: 600px) {
+  .lborder {
+    margin: 10px;
+    padding: 15px;
+    border-width: 2px;
+  }
+
+  .letter-content p {
+    font-size: 14px;
+  }
+
+  .button button {
+    width: 80%;
+    font-size: 16px;
+    padding: 8px;
+  }
 }
